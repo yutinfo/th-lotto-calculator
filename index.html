@@ -19,40 +19,121 @@
           <a href="#" class="navbar-brand d-flex align-items-center">
             <strong>Lotto</strong>
           </a>
-          <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarHeader"
-            aria-controls="navbarHeader"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="py-5 text-center container">
-
+      <section class="py-5 container">
+        <div class="card">
+          <div class="card-header">ซื้อหวย</div>
+          <div class="card-body">
+            <div class="row">
+                <div class="col">
+                  <label for="number" class="form-label">ชื่อ</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="ชื่อ"
+                    aria-label="ชื่อ"
+                  />
+                </div>
+                
+              </div>
+              <br />
+            <div class="row">
+              <div class="col">
+                <label for="number" class="form-label">เลข</label>
+                <input
+                  type="number"
+                  max="999"
+                  min="1"
+                  class="form-control"
+                  id="number"
+                  placeholder="เลข"
+                  aria-label="เลข"
+                />
+              </div>
+              <div class="col">
+                <label for="price" class="form-label">จำนวนเงิน</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="price"
+                  placeholder="จำนวน (บาท)"
+                  aria-label="จำนวน (บาท)"
+                />
+              </div>
+            </div>
+            <br />
+          </div>
+          <div class="card-footer">
+            <!-- <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">ตัวเดี่ยว</button>
+            <button class="btn btn-primary" type="button">
+              กลับ หน้า - หลัง
+            </button>
+            <button class="btn btn-primary" type="button">โต๊ด-เต็ง</button>
+            <button class="btn btn-primary" type="button">โต๊ด-เต็ง</button> -->
+            <!-- </div> -->
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option1" value="option1">
+                <label class="form-check-label" for="option1">ตัวเดี่ยว</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option2" value="option2">
+                <label class="form-check-label" for="option2">หน้า - หลัง</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option3" value="option3">
+                <label class="form-check-label" for="option3">โต๊ด</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="option4" value="option4">
+                <label class="form-check-label" for="option4">เต็ง</label>
+              </div>
+          </div>
+          <br />
+          <button class="btn btn-success" type="button">ซื้อ</button>
+        </div>
+        <br />
+        <div class="card">
+            <div class="card-header">แสดงผล</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col bg-secondary text-light">
+              
+                <pre class="code " style="padding: 5px;">
+พี่ประยวย
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+00 = 100x100
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-end">
+            <!-- <div class="d-grid gap-2 d-md-block"> -->
+            <button class="btn btn-success" type="button">Copy</button>
+            <button class="btn btn-info" type="button">Share</button>
+            <button class="btn btn-danger" type="button">Cancle</button>
+            <!-- </div> -->
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="text-muted py-5">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">
-         
-        </p>
-        <p class="mb-0">
-        
-        </p>
-      </div>
-    </footer>
+    <footer class="text-muted py-5"></footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
